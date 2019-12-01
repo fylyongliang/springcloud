@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="test@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="test">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="bostest"/>
+    <schema id="4" parent="1" name="clouddb01"/>
+    <schema id="5" parent="1" name="dianwangjiance"/>
+    <schema id="6" parent="1" name="information_schema"/>
+    <schema id="7" parent="1" name="manager_system"/>
+    <schema id="8" parent="1" name="mysql"/>
+    <schema id="9" parent="1" name="oasys"/>
+    <schema id="10" parent="1" name="oa_db"/>
+    <schema id="11" parent="1" name="performance_schema"/>
+    <schema id="12" parent="1" name="pinyougoudb"/>
+    <schema id="13" parent="1" name="rbac"/>
+    <schema id="14" parent="1" name="rf_device_mgn"/>
+    <schema id="15" parent="1" name="sakila"/>
+    <schema id="16" parent="1" name="ssmdemo"/>
+    <schema id="17" parent="1" name="ssmshiro"/>
+    <schema id="18" parent="1" name="wms_db"/>
+    <table id="19" parent="2" name="banji"/>
+    <table id="20" parent="2" name="dept"/>
+    <table id="21" parent="2" name="person"/>
+    <table id="22" parent="2" name="products"/>
+    <table id="23" parent="2" name="student">
+      <Comment>学生表</Comment>
+    </table>
+    <table id="24" parent="2" name="sys_permissions"/>
+    <table id="25" parent="2" name="sys_roles"/>
+    <table id="26" parent="2" name="sys_roles_permissions"/>
+    <table id="27" parent="2" name="sys_users"/>
+    <table id="28" parent="2" name="sys_users_roles"/>
+    <table id="29" parent="2" name="t_depart"/>
+    <table id="30" parent="2" name="tbl_dept"/>
+    <table id="31" parent="2" name="user"/>
+    <routine id="32" parent="2" name="hi">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <column id="33" parent="19" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="34" parent="19" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="35" parent="19" name="banjiname">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="36" parent="19" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="37" parent="20" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="38" parent="20" name="deptName">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="39" parent="20" name="peopleNumber">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <key id="40" parent="20" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="41" parent="21" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="42" parent="21" name="name">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="43" parent="21" name="age">
+      <Position>3</Position>
+      <DataType>int(2)|0</DataType>
+    </column>
+    <column id="44" parent="21" name="description">
+      <Position>4</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <key id="45" parent="21" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="46" parent="22" name="pid">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="47" parent="22" name="pname">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="48" parent="22" name="price">
+      <Position>3</Position>
+      <DataType>double|0</DataType>
+    </column>
+    <column id="49" parent="22" name="pdate">
+      <Position>4</Position>
+      <DataType>date|0</DataType>
+    </column>
+    <column id="50" parent="22" name="sid">
+      <Position>5</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <key id="51" parent="22" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>pid</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="52" parent="23" name="name">
+      <Position>1</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="53" parent="23" name="age">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="54" parent="24" name="id">
+      <Position>1</Position>
+      <Comment>主键</Comment>
+      <DataType>int(10) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="55" parent="24" name="permission">
+      <Position>2</Position>
+      <Comment>权限名</Comment>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="56" parent="24" name="description">
+      <Position>3</Position>
+      <Comment>描述</Comment>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="57" parent="24" name="available">
+      <Position>4</Position>
+      <Comment>是否可用，0表示可用，1表示不可用</Comment>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <key id="58" parent="24" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="59" parent="25" name="id">
+      <Position>1</Position>
+      <Comment>主键</Comment>
+      <DataType>int(10) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="60" parent="25" name="role">
+      <Position>2</Position>
+      <Comment>角色名</Comment>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="61" parent="25" name="description">
+      <Position>3</Position>
+      <Comment>描述</Comment>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="62" parent="25" name="available">
+      <Position>4</Position>
+      <Comment>是否可用，0表示可用，1表示不可用</Comment>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <key id="63" parent="25" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="64" parent="26" name="role_id">
+      <Position>1</Position>
+      <Comment>角色id</Comment>
+      <DataType>int(10) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="65" parent="26" name="permission_id">
+      <Position>2</Position>
+      <Comment>权限id</Comment>
+      <DataType>int(10) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="66" parent="26" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>role_id
+permission_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="67" parent="27" name="id">
+      <Position>1</Position>
+      <Comment>主键</Comment>
+      <DataType>int(10) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="68" parent="27" name="username">
+      <Position>2</Position>
+      <Comment>用户名</Comment>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="69" parent="27" name="password">
+      <Position>3</Position>
+      <Comment>用户名</Comment>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="70" parent="27" name="salt">
+      <Position>4</Position>
+      <Comment>盐</Comment>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="71" parent="27" name="locked">
+      <Position>5</Position>
+      <Comment>是否锁住，0表示未锁，1表示锁住</Comment>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <key id="72" parent="27" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="73" parent="28" name="user_id">
+      <Position>1</Position>
+      <Comment>用户id</Comment>
+      <DataType>int(10) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="74" parent="28" name="role_id">
+      <Position>2</Position>
+      <Comment>角色id</Comment>
+      <DataType>int(10) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="75" parent="28" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>user_id
+role_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="76" parent="29" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="77" parent="29" name="dbase">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="78" parent="29" name="name">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="79" parent="29" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="80" parent="30" name="dept_id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="81" parent="30" name="dept_name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="82" parent="30" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>dept_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="83" parent="31" name="id">
+      <Position>1</Position>
+      <DataType>int(255)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="84" parent="31" name="username">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="85" parent="31" name="password">
+      <Position>3</Position>
+      <DataType>varchar(11)|0</DataType>
+    </column>
+    <key id="86" parent="31" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
