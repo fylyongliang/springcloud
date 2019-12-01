@@ -11,6 +11,7 @@ import javax.persistence.Id;
 /**
  * @author fyl
  * @data
+ * 部门实体类
  **/
 
 @Data
