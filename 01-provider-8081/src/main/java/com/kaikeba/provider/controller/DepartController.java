@@ -10,6 +10,7 @@ import java.util.List;
 /**
  * @author fyl
  * @data
+ * 部门
  **/
 @RequestMapping("/provider/depart")
 @RestController
